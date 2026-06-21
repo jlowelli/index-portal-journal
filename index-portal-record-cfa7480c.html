@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻将胡了 · 简明指南与访问提醒</title>
+    <style>
+        /* 极简留白 · 窄版心 · 清晰层级 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fbfbfb;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2.4rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+            background: #ffffff;
+            padding: 2.8rem 2rem 3.6rem;
+            border-radius: 24px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.02), 0 6px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        /* 文章标题层级 */
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 1.6rem;
+        }
+
+        .hero .kicker {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 0.4rem;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            color: #111;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .sub {
+            font-size: 1.05rem;
+            color: #5a5a5a;
+            max-width: 90%;
+        }
+
+        /* 正文段落 */
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 500;
+            margin: 2rem 0 0.8rem;
+            color: #1e1e1e;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 1.6rem 0 0.4rem;
+            color: #2a2a2a;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* 引用提示块 */
+        .callout {
+            background: #f4f4f6;
+            border-left: 4px solid #a0aec0;
+            padding: 1.2rem 1.4rem;
+            margin: 1.6rem 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 0.95rem;
+            color: #2d3748;
+        }
+
+        .callout strong {
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        /* 链接风格 */
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease, color 0.15s ease;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+            border-bottom: 1px solid #1d4ed8;
+        }
+
+        /* 问与答摘要 */
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 500;
+            color: #111;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item .a {
+            color: #4a4a4a;
+            padding-left: 0.8rem;
+            border-left: 2px solid #dcdcdc;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+        }
+
+        /* 访问句 / 收尾 */
+        .visit-note {
+            margin-top: 2.6rem;
+            padding-top: 1.4rem;
+            border-top: 1px solid #eaeaea;
+            font-size: 0.95rem;
+            color: #4a4a4a;
+        }
+
+        /* 响应式 */
+        @media (max-width: 560px) {
+            .page {
+                padding: 1.8rem 1.2rem 2.4rem;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .hero .sub {
+                font-size: 0.95rem;
+                max-width: 100%;
+            }
+
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .page {
+                padding: 1.4rem 0.8rem;
+                border-radius: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 文章标题与导语 -->
+        <div class="hero">
+            <div class="kicker">简明指南 · 访问提醒</div>
+            <h1>麻将胡了：从入门到顺畅访问</h1>
+            <p class="sub">对很多人来说，「麻将胡了」是一个既熟悉又容易混淆的名字。这篇短文不做什么宏大介绍，只想从实用角度出发，说说它到底是什么、怎么理解，以及访问时值得留意的几个细节。</p>
+        </div>
+
+        <!-- 正文第一段：定义与基本印象 -->
+        <h2>一、不只是个名字</h2>
+        <p>如果你对麻将题材的游戏有所关注，大概早就听过「麻将胡了」这个说法。它其实指向一个线上主题空间——一个以经典麻将规则为底子、融合了现代交互体验的站点。简单说，你可以把它理解成一个以“胡牌”为核心乐趣的去处，但又不局限在单纯的规则里。它更像是一个门户，把传统麻将的节奏和当下常见的反馈机制结合在了一起。</p>
+
+        <!-- 正文第二段：特点与场景 -->
+        <h2>二、它适合什么样的人</h2>
+        <p>坦白说，如果你平时就喜欢打几圈麻将，或者对牌型、番数、听牌这些概念不陌生，那么这里的氛围会让你觉得放松。另一方面，哪怕你只是偶尔想找个地方转转、感受一下牌桌上的那种张弛节奏，它也不会给你设置太高的门槛。很多初次接触的人反馈说，整个体验偏轻量，没有冗长的说明，进去之后基本看看就明白怎么继续了。</p>
+
+        <!-- 引用提示块：访问前的小提醒 -->
+        <div class="callout">
+            <strong>访问提醒：</strong> 不管你是第一次去，还是已经去过很多次，都建议在设备网络稳定的情况下打开。毕竟涉及实时交互，偶尔的网络波动可能会影响连接体验。另外，保持浏览器的版本更新也有助于页面加载的顺畅度。
+        </div>
+
+        <h3>场景速写：什么时候会想起它</h3>
+        <p>周末晚上，想找点不费力的事情做；或者和朋友聊起麻将，突然手痒想摸两把——这些时候，「麻将胡了」就变成一个很自然的选项。它不要求你立刻组局，也不用下载额外的软件，打开浏览器就能进入那个界面。对于追求效率的人来说，这本身就是一种优点。</p>
+
+        <!-- 嵌入链接的自然句子 -->
+        <p>如果你之前对它的印象还停留在“听说过但没试过”，现在不妨直接用浏览器访问 <a href="https://index-portal-mahjong.com">麻将胡了</a>，看看它实际的样子。很多细节只有自己点开之后才说得清，旁人的描述终归隔了一层。</p>
+
+        <!-- 第三段：FAQ 摘要（克制版） -->
+        <h2>三、几个常被问到的点</h2>
+
+        <div class="faq-item">
+            <div class="q">Q：需要注册或者记密码吗？</div>
+            <div class="a">和其他很多同类地方不同，这里并没有强制的注册流程。多数情况下你直接进去就能看到主要内容。不过某些附加功能可能还是需要简单的身份关联，具体以页面上的提示为准。</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="q">Q：手机上打开和电脑上差别大吗？</div>
+            <div class="a">我个人的感受是，它在手机上的适配做得还算干净，按钮大小、触控区域都考虑过。不过如果你习惯同时看牌型变化和几个信息区域，屏幕大一点确实会舒服些。这不算硬伤，只是个人偏好。</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="q">Q：有没有什么“潜规则”需要提前知道？</div>
+            <div class="a">没什么潜规则。它就是一个公开的站点，规则和界面都是摆在明面上的。唯一需要提醒的是：任何时候都不要把自己代入什么“稳赢”或者“必杀”的幻想里——不存在那种东西。享受过程，保持平常心，才是长久之道。</div>
+        </div>
+
+        <!-- 访问句 / 收尾段落 -->
+        <div class="visit-note">
+            <p>说到底，「麻将胡了」不是一个需要你花几个小时去研究的东西。它更接近一个你可以随时推门进去坐坐的屋子。里面的话题、节奏、色彩都是围绕麻将展开的，但最终你能得到什么，取决于你带着什么样的心情走进去。</p>
+            <p style="margin-top: 0.6rem; color: #666;">如果你准备好了，就把这句话当作一个安静的邀请：<a href="https://index-portal-mahjong.com">麻将胡了</a> 已经在那里了。</p>
+        </div>
+    </div>
+</body>
+</html>
